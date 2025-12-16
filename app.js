@@ -498,7 +498,7 @@ const teamData = {
             es: 'Camilo es el guardián de la voz de Clip ID. Con una década de experiencia en periodismo cultural, asegura que cada historia sea tan impactante como auténtica.',
             en: 'Camilo is the guardian of Clip ID\'s voice. With a decade of experience in cultural journalism, he ensures every story is as impactful as it is authentic.'
         },
-        img: 'assets/sarah-owl.png'
+        img: 'sarah-owl.png'
     },
     'bio_david': {
         name: 'Felipe Aramburo',
@@ -507,7 +507,7 @@ const teamData = {
             es: 'Felipe construye la experiencia digital de Clip ID. Es un mago del código que prioriza la velocidad, la accesibilidad y el diseño centrado en el usuario.',
             en: 'Felipe builds the digital experience for Clip ID. He is a code wizard who prioritizes speed, accessibility, and user-centered design.'
         },
-        img: 'assets/david-cat.png'
+        img: 'david-cat.png'
     },
     'bio_hernan': {
         name: 'Hernando Aramburo',
@@ -516,7 +516,7 @@ const teamData = {
             es: 'Hernando aporta perspectivas únicas sobre el equilibrio entre la vida laboral y la creatividad. También es un autor distinguido en literatura narrativa.',
             en: 'Hernando brings unique perspectives on work-life balance and creativity. He is also a distinguished author in narrative literature.'
         },
-        img: 'assets/elena-panda.png'
+        img: 'elena-panda.png'
     },
     'bio_alejandro': {
         name: 'Alejandro Merlano',
@@ -526,7 +526,7 @@ const teamData = {
             en: 'Alejandro maps the future of Clip ID. His focus on content strategy ensures the magazine stays at the forefront of cultural trends.'
 
         },
-        img: 'assets/alejandro-wolf.png'
+        img: 'alejandro-wolf.png'
     }
 };
 
