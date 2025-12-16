@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip ID | Historias y Relatos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="#" class="logo"><img src="assets/brand-logo.png" alt="Clip ID" style="height: 80px;"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#featured" data-i18n="nav_featured">Destacados</a></li>
+                    <li><a href="#latest" data-i18n="nav_latest">Últimos</a></li>
+                    <li><a href="#about" data-i18n="nav_about">Nosotros</a></li>
+                    <li><a href="#subscribe" class="btn btn-primary" data-i18n="nav_subscribe">Suscribirse</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container" style="padding-top: 1.5rem; padding-bottom: 0.5rem;">
+        <button id="contentMenuBtn" class="content-menu-btn" aria-label="Open Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="overline" data-i18n="hero_overline">Bienvenido a Clip ID</span>
+                <h1 data-i18n="hero_title">Descubre historias que importan.</h1>
+                <p class="lead" data-i18n="hero_lead">Ideas sobre tecnología, estilo de vida y el futuro del trabajo. Curado diariamente.</p>
+                <div class="hero-actions">
+                    <a href="#latest" class="btn btn-primary" data-i18n="btn_start">Empezar a Leer</a>
+                    <a href="#subscribe" class="btn btn-secondary" data-i18n="btn_updates">Recibir Actualizaciones</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured" class="featured-posts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="section_featured">Historias Destacadas</h2>
+                </div>
+                <div class="grid">
+                    <article class="card featured-card" data-topic="Technology">
+                        <div class="card-image placeholder-image" style="background-color: #e0e7ff;"></div>
+                        <div class="card-content">
+                            <span class="category" data-i18n="cat_tech">Cuentos</span>
+                            <h3 data-i18n="title_tech">La tía, el divino y el mar sin regreso</h3>
+                            <p data-i18n="desc_tech">A Joynercito lo conocían como “El divino”, y no precisamente por algún talento celestial...</p>
+                            <a href="article.html?topic=Technology" class="read-more" data-i18n="read_more">Leer Artículo &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="card" data-topic="Lifestyle">
+                        <div class="card-image placeholder-image" style="background-color: #fae8ff;"></div>
+                        <div class="card-content">
+                            <span class="category" data-i18n="cat_lifestyle">Acción Teatral</span>
+                            <h3 data-i18n="title_lifestyle">De Locha Libre – Misterios insondables</h3>
+                            <p data-i18n="desc_lifestyle">Está científicamente comprobado que…. ¿Los pollitos hacen pío, pío, pío cuando tienen hambre...?</p>
+                            <a href="article.html?topic=Lifestyle" class="read-more" data-i18n="read_more">Leer Artículo &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="card" data-topic="Teatral_Ep2">
+                         <div class="card-image placeholder-image" style="background-color: #fae8ff;"></div>
+                        <div class="card-content">
+                            <span class="category" data-i18n="cat_teatral_ep2">Acción Teatral</span>
+                            <h3>¿Cuándo llueven críticas, debo usar un paraguas especial?</h3>
+                            <p>Episodio 02: De Locha Libre – Misterios insondables.</p>
+                            <a href="article.html?topic=Teatral_Ep2" class="read-more" data-i18n="read_more">Leer Artículo &rarr;</a>
+                        </div>
+                    </article>
+                     <article class="card" data-topic="Health">
+                        <div class="card-image placeholder-image" style="background-color: #dcfce7;"></div>
+                        <div class="card-content">
+                            <span class="category" data-i18n="cat_health">Salud</span>
+                            <h3 data-i18n="title_health">Rutinas Matutinas</h3>
+                            <p data-i18n="desc_health">Cambios simples en tu mañana que pueden mejorar tu día.</p>
+                            <a href="article.html?topic=Health" class="read-more" data-i18n="read_more">Leer Artículo &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="spotlight" class="spotlight-section">
+            <div class="container">
+                <div class="spotlight-content">
+                    <span class="spotlight-label" data-i18n="spotlight_label">Autor Destacado</span>
+                    <h2 data-i18n="spotlight_title">Hernando Aramburo Restrepo</h2>
+                    <p data-i18n="spotlight_desc">Descubre las obras de una voz distinguida en la literatura. Editorial Calíope presenta una colección curada.</p>
+                    <a href="https://www.editorialcaliope.com/hernando-aramburo-restrepo/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="btn_visit">Visitar Página</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="subscribe" class="subscribe-section">
+            <div class="container">
+                <div class="subscribe-content">
+                    <h2 data-i18n="subscribe_title">Queremos saber más de ti</h2>
+                    <p data-i18n="subscribe_text">Únete a nuestros lectores semanales para no perderte ninguna de nuestras nuevas ideas.</p>
+                    <form id="subscribeForm" class="subscribe-form">
+                        <div class="form-group">
+                            <label for="fullName" data-i18n="label_name">Nombre Completo</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Juan Pérez" required data-i18n="ph_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="label_email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="juan@ejemplo.com" required data-i18n="ph_email">
+                        </div>
+                        <button type="submit" class="btn btn-submit" data-i18n="btn_subscribe">Suscribirse Ahora</button>
+                    </form>
+                    <p class="form-note" data-i18n="spam_note">Sin spam, nunca. Cancela cuando quieras.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 data-i18n="team_title">Conoce al Equipo</h2>
+                    <p data-i18n="team_subtitle">Las mentes detrás de Clip ID.</p>
+                </div>
+                <div class="team-grid">
+                    <!-- Member 1 -->
+                    <div class="team-card" data-bio-key="bio_sarah">
+                        <img src="assets/sarah-owl.png" alt="Camilo Aramburo" class="team-img">
+                        <h3>Camilo Aramburo</h3>
+                        <p class="role-preview" data-i18n="role_sarah">Editor en Jefe</p>
+                        <div class="team-socials">
+                            <a href="#" aria-label="Email Camilo"><svg class="team-social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+                            <a href="#" aria-label="Camilo's Twitter"><svg class="team-social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        </div>
+                    </div>
+                    <!-- Member 2 -->
+                    <div class="team-card" data-bio-key="bio_david">
+                        <img src="assets/david-cat.png" alt="Felipe Aramburo" class="team-img">
+                        <h3>Felipe Aramburo</h3>
+                        <p class="role-preview" data-i18n="role_david">Desarrollador Principal</p>
+                        <div class="team-socials">
+                            <a href="#" aria-label="Email Felipe"><svg class="team-social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+                            <a href="#" aria-label="Felipe's Instagram"><svg class="team-social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        </div>
+                    </div>
+                    <!-- Member 3 -->
+                    <div class="team-card" data-bio-key="bio_hernan">
+                        <img src="assets/elena-panda.png" alt="Hernando Aramburo" class="team-img">
+                        <h3>Hernando Aramburo</h3>
+                        <p class="role-preview" data-i18n="role_hernan">Gurú del Bienestar</p>
+                        <div class="team-socials">
+                            <a href="#" aria-label="Email Hernando"><svg class="team-social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+                            <a href="#" aria-label="Hernando's Instagram"><svg class="team-social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        </div>
+                    </div>
+                    <!-- Member 4 -->
+                    <div class="team-card" data-bio-key="bio_alejandro">
+                        <img src="assets/alejandro-wolf.png" alt="Alejandro Merlano" class="team-img">
+                        <h3>Alejandro Merlano</h3>
+                        <p class="role-preview" data-i18n="role_alejandro">Visionario Estratégico</p>
+                        <div class="team-socials">
+                            <a href="#" aria-label="Email Alejandro"><svg class="team-social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+                            <a href="#" aria-label="Alejandro's LinkedIn"><svg class="team-social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Team Modal -->
+    <dialog id="teamModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" aria-label="Close modal">&times;</button>
+            <div class="modal-body-content" style="text-align: center;">
+                <img id="modalImg" src="" alt="" class="team-img" style="width: 150px; height: 150px; margin: 0 auto 1rem;">
+                <h3 id="modalName"></h3>
+                <p id="modalRole" style="font-weight: 600; color: var(--color-primary); margin-bottom: 1rem;"></p>
+                <p id="modalBio"></p>
+            </div>
+        </div>
+    </dialog>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo"><img src="assets/brand-logo.png" alt="Clip ID" style="height: 80px;"></span>
+                    <p>&copy; 2024 Clip ID. All rights reserved.</p>
+                </div>
+                <div class="footer-links" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="social-icon">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="mailto:clipidcol@gmail.com" aria-label="Email Us">clipidcol@gmail.com</a>
+                    <a href="#" data-i18n="privacy">Política de Privacidad</a>
+                    <a href="#" data-i18n="terms">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+    <button id="langToggle" class="lang-toggle" aria-label="Switch Language">ES</button>
+
+
+
+    <aside id="contentSidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Menú</h3>
+            <button id="closeSidebarBtn" class="close-sidebar-btn">&times;</button>
+        </div>
+        <div class="sidebar-content">
+            <nav class="sidebar-nav">
+                <h4>Artículos</h4>
+                <ul id="sidebarArticleList">
+                     <!-- Populated by JS -->
+                </ul>
+
+                <h4>Secciones</h4>
+                <ul>
+                    <li><a href="#featured" class="sidebar-link">Historias Destacadas</a></li>
+                    <li><a href="#latest" class="sidebar-link">Últimos Artículos</a></li>
+                    <li><a href="#spotlight" class="sidebar-link">Autor Destacado</a></li>
+                    <li><a href="#team" class="sidebar-link">Nuestro Equipo</a></li>
+                     <li><a href="#subscribe" class="sidebar-link">Suscribirse</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
