@@ -21,31 +21,23 @@ body {
 
 #autor {
     background-color: #5E8D36;      
-    padding: 4px 14px; /* Un poco más equilibrado que 2px 10px */
+    padding: 4px 14px; 
     border-radius: 20px;
     margin-right: auto;
     margin-left: auto; 
     width: fit-content; 
     
-    /* TIPOGRAFÍA: Más limpia para que sea elegante */
     font-family: 'Crimson Text', serif; 
     color: #ffffff;
     font-weight: 600;
     font-size: 0.9rem;
 
-    /* PROFUNDIDAD DEFINIDA (Efecto de relieve real) */
     box-shadow: 
-        /* 1. Sombra de profundidad abajo */
         0 3px 5px rgba(0, 0, 0, 0.2), 
-        /* 2. Brillo en el borde superior para dar volumen */
         inset 0 1px 1px rgba(255, 255, 255, 0.4),
-        /* 3. Sombra interna abajo para redondear la forma */
         inset 0 -2px 2px rgba(0, 0, 0, 0.15);
-
-    /* SOMBRA DE TEXTO: Menos "glow" y más definición */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     
-    /* El toque final: un borde casi invisible que define el color */
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
 #feliz {
@@ -56,10 +48,8 @@ body {
     letter-spacing: 4px;
     text-transform: uppercase;
     
-    /* Color base dorado champaña */
     color: #d4af37;
     
-    /* Degradado que simula brillo metálico */
     background: linear-gradient(
         to right, 
         #bf953f, 
@@ -72,10 +62,8 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    /* Sombra elegante y profunda */
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.4));
     
-    /* Animación de brillo suave */
     background-size: 200% auto;
     animation: brilloElegante 4s linear infinite;
 }
@@ -107,7 +95,7 @@ body {
 
 }
 
-/* El detalle "diferente": un marcador vertical que indica inicio */
+
 #invitacion::before {
     content: "";
     position: absolute;
@@ -115,10 +103,9 @@ body {
     top: 10px;
     height: 30px;
     width: 4px;
-    background: #d4af37; /* Dorado o el color de acento que prefieras */
+    background: #d4af37; 
 }
 
-/* Detalle inferior para cerrar el bloque visualmente */
 #invitacion::after {
     content: "CLIP-ID // 2025";
     display: block;
@@ -133,28 +120,25 @@ body {
 }
 
 #adelanto {
-    font-family: 'Nunito', sans-serif; /* Usamos Nunito para el look de etiqueta */
-    font-size: 0.85rem;                /* Tamaño pequeño tipo 'label' */
+    font-family: 'Nunito', sans-serif; 
+    font-size: 0.85rem;                
     font-weight: 800;
-    text-transform: uppercase;         /* Mayúsculas para mayor autoridad */
-    letter-spacing: 2px;               /* Espaciado elegante entre letras */
+    text-transform: uppercase;         
+    letter-spacing: 2px;               
     
-    background: linear-gradient(135deg, #d4af37, #b8860b); /* Dorado metálico */
+    background: linear-gradient(135deg, #d4af37, #b8860b); 
     color: #ffffff;
     
-    padding: 6px 20px;                 /* Proporciones más equilibradas */
-    border-radius: 50px;               /* Forma de píldora perfecta */
+    padding: 6px 20px;                 
+    border-radius: 50px;               
     
     width: fit-content;
-    margin: 2rem auto;                 /* Centrado con espacio vertical */
+    margin: 2rem auto;                 
     
-    /* Sombra de caja suave en lugar de sombra de texto fuerte */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     
-    /* Brillo sutil sobre el texto */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     
-    /* Suavizado */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,7 +146,6 @@ body {
 } 
     
 
-/* Header Section */
 .main-header {
     text-align: center;
     padding: 4rem 1rem;
@@ -180,7 +163,7 @@ body {
 }
 
 .logo {
-    width: 100px;
+    width: 200px;
     display: block; 
     margin-bottom: 2rem;
     margin-right: auto;
@@ -188,39 +171,33 @@ body {
     border-radius: 10%; 
 } 
 
-/* Container */
 .cards-container {
     display: flex;
     flex-direction: column;
-    gap: 5rem; /* Increased gap for zigzag breathing room */
+    gap: 5rem; 
     max-width: 1100px;
     margin: 0 auto;
     padding: 2rem;
 }
 
-/* 1. The Wrapper (The New Logic) */
 .card-wrapper {
     display: flex;
-    align-items: center; /* Vertically centers image with card */
+    align-items: center; 
     gap: 2.5rem;
     width: 100%;
     transition: all 0.4s ease;
 }
 
-/* Odd items (1, 3, 5): Card Left, Image Right */
 .card-wrapper:nth-child(odd) {
     align-self: flex-start;
 }
-
-/* Even items (2, 4): Card Right, Image Left (Flipped) */
 .card-wrapper:nth-child(even) {
     flex-direction: row-reverse;
     align-self: flex-end;
 }
 
-/* 2. The Card (Adjusted Width) */
 .card {
-    width: 70%; /* Leave space for the image */
+    width: 70%; 
     background-color: var(--card-bg);
     border-radius: 30px;
     box-shadow: var(--shadow);
@@ -234,9 +211,8 @@ body {
     box-shadow: var(--shadow-hover);
 }
 
-/* 3. The Outside Image */
 .outside-img {
-    width: 275px; /* Specific size for book covers */
+    width: 275px; 
     height: 425px; 
     border-radius: 20px;
     box-shadow: var(--shadow);
@@ -244,10 +220,9 @@ body {
 }
 
 .card-wrapper:hover .outside-img {
-    transform: scale(1.05) rotate(2deg); /* Image reacts when hovering the wrapper */
+    transform: scale(1.05) rotate(2deg); 
 }
 
-/* Card Visual Details */
 .card-header {
     height: 14px;
     background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
@@ -270,10 +245,9 @@ body {
     margin: 0.5rem 0 1rem 0;
 }
 
-/* Responsive Fix */
 @media (max-width: 900px) {
     .card-wrapper, .card-wrapper:nth-child(even) {
-        flex-direction: column-reverse; /* Stack vertically, Image on top */
+        flex-direction: column-reverse; 
         align-items: center;
         gap: 1.5rem;
     }
@@ -292,7 +266,7 @@ body {
 
     .logo {
         margin: 0 auto 1.5rem auto;
-        margin-left: auto; /* Override desktop absolute margin */
+        margin-left: auto; 
     }
 
     .outside-img {
@@ -302,7 +276,6 @@ body {
     }
 }
 
-/* Small Mobile Devices */
 @media (max-width: 480px) {
     .main-header {
         padding: 1.5rem 0.5rem;
@@ -324,16 +297,15 @@ body {
         max-width: 180px;
     }
 
-    /* Mobile Form Styles */
     #mc_embed_signup {
-        margin: 1rem !important; /* Reduce margins */
-        padding: 15px !important; /* Reduce padding */
-        width: auto !important; /* Allow it to shrink */
+        margin: 1rem !important; 
+        padding: 15px !important; 
+        width: auto !important; 
     }
 
     #mc_embed_signup .button {
-        margin-left: 0 !important; /* Remove the fixed margin */
-        width: 100% !important; /* Full width button */
+        margin-left: 0 !important; 
+        width: 100% !important;
         display: block !important;
     }
     
@@ -348,7 +320,7 @@ body {
     }
     
     .subscribeParent {
-        width: 90%; /* Responsive width */
+        width: 90%; 
         margin-top: 50px;
         text-align: center;
     }
@@ -378,11 +350,9 @@ body {
     
 } 
 /* Mailchimp form */
-/* Contenedor Principal */
-/* Contenedor Principal Oscuro */
-/* Contenedor Principal Oscuro */
+
 #mc_embed_signup {
-    background: #121212 !important; /* Fondo oscuro */
+    background: #121212 !important; 
     color: #f8f9fa;
     font-family: 'Nunito', sans-serif !important;
     max-width: 500px;
@@ -394,7 +364,6 @@ body {
     box-shadow: 10px 10px 15px rgba(64, 64, 60, 0.927);   
 }
 
-/* Título Dorado */
 #mc_embed_signup h2 {
     color: #5E8D36 !important;
     font-weight: 800;
@@ -403,7 +372,6 @@ body {
     letter-spacing: 2px;
 }
 
-/* Estilo de los Inputs */
 #mc_embed_signup .mc-field-group label {
     color: #ccc !important;
     margin-bottom: 5px;
@@ -423,13 +391,12 @@ body {
 }
 
 #mc_embed_signup input:focus {
-    border-color: #5E8D36 !important; /* Tu verde */
+    border-color: #5E8D36 !important; 
     outline: none;
 }
 
-/* EL BOTÓN (Corregido para que se vea) */
 #mc_embed_signup .button {
-    background-color: #5E8D36 !important; /* Tu verde */
+    background-color: #5E8D36 !important; 
     color: #fff !important;
     font-weight: 700 !important;
     border-radius: 30px !important;
@@ -447,13 +414,10 @@ body {
     background-color: #4a6f2a !important;
 }
 
-/* OCULTAR SOLO EL LOGO, NO EL BOTÓN */
 .refferal_badge, 
 #mc_embed_signup .optionalParent p { 
     display: none !important; 
 }
-
-/* Limpiar textos de Mailchimp */
 .indicates-required {
     text-align: right;
     font-size: 0.7rem;
@@ -462,11 +426,11 @@ body {
 }
 
 .site-footer {
-    background-color: #1a1a1a; /* Professional off-black */
-    color: #9ca3af; /* Soft grey for secondary text */
+    background-color: #1a1a1a; 
+    color: #9ca3af; 
     padding: 40px 20px;
     font-family: 'Nunito', sans-serif;
-    border-top: 1px solid #2d2d2d; /* Subtle divider line */
+    border-top: 1px solid #2d2d2d; 
     margin-top: 100px;
 }
 
@@ -479,11 +443,11 @@ body {
 .footer-copyright {
     font-size: 0.9rem;
     margin-bottom: 8px;
-    color: #ffffff; /* Bright white for brand name */
+    color: #ffffff; 
 }
 
 .footer-email a {
-    color: #10b981; /* Matching your brand emerald green */
+    color: #10b981; 
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
@@ -491,7 +455,7 @@ body {
 }
 
 .footer-email a:hover {
-    color: #34d399; /* Lighter green on hover */
+    color: #34d399; 
     text-decoration: underline;
 }
 
@@ -505,7 +469,6 @@ body {
    
 } 
 
-/* Mobile Form Overrides - Must be at the end to override desktop styles */
 @media (max-width: 600px) {
     #mc_embed_signup {
         margin: 1rem !important;
@@ -531,4 +494,31 @@ body {
         width: 100% !important;
         box-sizing: border-box; 
     }
-} 
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.footer-social-icon {
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s ease;
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+
+.footer-social-icon:hover {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+#youtube-icon {
+    width: 55px;
+    height: 55px; 
+}
