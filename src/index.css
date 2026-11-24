@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1, h2, h3, .font-title {
+    font-family: 'Unna', serif;
+  }
+  .font-sub {
+    font-family: 'Nunito', sans-serif;
+  }
+  body, p, span, li, button, input {
+    font-family: 'Hind', sans-serif;
+  }
+  ::selection {
+    background-color: #E9D758;
+    color: #39393A;
+  }
+}
+
+@layer components {
+  .wireframe-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  .wireframe-card:hover {
+    transform: translateY(-4px);
+  }
+  .active-card {
+    border-color: #FF8552 !important;
+    box-shadow: 0 14px 28px rgba(41, 115, 115, 0.12), 0 10px 10px rgba(0, 0, 0, 0.04);
+  }
+}
